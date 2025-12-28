@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+.sidebar {
+  background-color: #f7fb10;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  padding: 20px;
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+}
+
+.all-project {
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 .all-project-name {
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.all-task-table {
+  width: 100%;
+}
+
+.all-task-table-row {
+  display: grid;
+  grid-template-columns: 6fr 2fr 2fr;
+}
+
+.all-task-table-row > :first-child {
+  text-align: left;
+}
+
+.all-task-table-row > :not(:first-child) {
+  text-align: center;
+}
+
+.all-task-table .all-task-table-row:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+button.add-project {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f7fb10;
+  border: 1px solid black;
+}
+
+button.add-project:hover {
+  background-color: #e0e0e0;
+}
+
+input#project-name {
+  margin-bottom: 20px;
+}
+
+div.add-project-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h3.sidebar-text:hover {
+  color: #0d28dc;
+}
+
+div.all-project-header {
+  display: flex;
+  width: 100%;
+}
+
+div.all-project-header > button {
+  margin-left: auto;
+}
+
+div.add-task-form-input {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.add-task-dialog {
+  padding: 20px;
+}
+
+.add-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+.all-task-table-row:hover {
+  color: #1536c7;
+}

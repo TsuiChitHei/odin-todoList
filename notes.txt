@@ -1,0 +1,42 @@
+Todo items
+-title
+-description
+-dueDate
+-priority
+-id 
+-project id
+
+Projects
+-project name
+-List of Todo items
+-id
+
+functions to implement
+-view all Projects
+-view all items in Projects
+-view and edit details in items
+-delete items
+
+Structure
+-Class for Todo items
+-Class for Projects
+-Controller Item operations
+-Controller for Project operations
+-Storage service
+
+
+
+1. Create item and project classes, create item and project controllers, write a simple module to test these features
+
+Pages for website
+-List all projects and respective list of items
+-A page for each individual project
+-All pages should allow 
+    -Deleting items
+    -Editing items
+    -Expanding items
+    -Creating items 
+    -Editing project name
+    -delete project
+-List all projects page should also allow creation/deletion/editing of projects
+-Side bar to navigate to pages, delete and create and edit projects
